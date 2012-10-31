@@ -1,0 +1,1 @@
+Stable VersionVersion in this branch will be always on the server.To commit changes one have to be sure that there is no bugs in one's commit.
