@@ -1,1 +1,11 @@
 @charset "utf-8";
+div.contact{
+	position: absolute;
+	left: 20px;
+	top: 90px;
+	max-width: 400px;
+}
+
+p.contact{
+	color: #636363;
+}

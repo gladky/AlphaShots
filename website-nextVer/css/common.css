@@ -1,7 +1,7 @@
 @charset "utf-8";
 body,html {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background: #4E5869;
+	background: white;
 	margin: 0;
 	padding: 0;
 	color: #000;
@@ -21,6 +21,9 @@ h1, h2, h3, h4, h5, h6, p {
 	padding-left: 35px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
 }
 h1{
+	color: #009ee3;
+}
+h2{
 	color: #009ee3;
 }
 h3{
@@ -178,9 +181,8 @@ p.branding a {
 }
 
 div.option-wrapper{
-	position: relative;
-	margin-right: 25px;
-	margin-left: auto;
+	position: absolute;
+	right: 25px;
 	max-width: 400px;
 }
 /* ~~ This is the layout information. ~~ 
