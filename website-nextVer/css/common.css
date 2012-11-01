@@ -222,33 +222,11 @@ div.option-wrapper{
 	margin-bottom: 20px;
 	margin-left: auto ;
  	margin-right: auto ;
-	background: url(pictures/tmpbg.gif) no-repeat;
+	background: url(../pictures/tmpbg.gif) no-repeat;
 	
 	position:relative;
 	z-index:6;
 	/*background: transparent;*/
-}
-
-.offer{
-	width: 90%;
-	height:520px;
-	margin-top: 5px;
-	margin-bottom: 20px;
-	margin-left: auto ;
- 	margin-right: auto ;
-	background: white;
-	
-	position:relative;
-	z-index:6;
-	/*background: transparent;*/
-}
-
-.offer-em{
-	height:230px;
-	margin-top: 5px;
-	background: grey;
-	
-	position:relative;
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */

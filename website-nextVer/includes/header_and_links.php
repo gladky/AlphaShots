@@ -3,7 +3,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Alpha Shots</title>
-		<link href="main.css" rel="stylesheet" type="text/css" />
+		<link href="css/common.css" rel="stylesheet" type="text/css" />
+		<link href="css/offer.css" rel="stylesheet" type="text/css" />
+		<link href="css/gallery.css" rel="stylesheet" type="text/css" />
+		<link href="css/contact.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 	</head>
 <body>
