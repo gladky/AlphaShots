@@ -8,7 +8,7 @@
 		</div>
 	</div>
 </div> <!--end .header-->
-<hr width="90%" /> <!--line between header and menu-->
+<hr width="100%" /> <!--line between header and menu-->
 <ul class="nav" id="nav" style="letter-spacing: 6px; ">
 	<li class="horizontal-first">	<a href="panorama.php">Panorama sferyczna</a></li>
 	<li class="horizontal">			<a href="fotografia.php">Fotografia</a></li>

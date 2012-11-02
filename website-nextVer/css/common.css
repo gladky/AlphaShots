@@ -29,7 +29,9 @@ h2{
 h3{
 	color: #009ee3;
 	padding-bottom: 0px;
+	margin-top: 15px;
 	margin-bottom: 0px;
+	padding-top: 0px;
 }
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
