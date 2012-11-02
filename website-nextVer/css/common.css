@@ -169,7 +169,7 @@ p.branding {
 	padding: 0.3em 1em;
 	color: white;
 	float: right;
-	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
+	font-weight: bold;
 	font-size: 1.27em;
 	line-height: 1.6;
 	break-after: right;
@@ -226,7 +226,7 @@ div.option-wrapper{
 	margin-bottom: 20px;
 	margin-left: auto ;
  	margin-right: auto ;
-	background: url(../pictures/tmpbg.gif) no-repeat;
+	background: url(../images/widget/widget_pict_02.jpg) no-repeat;
 	
 	position:relative;
 	z-index:6;
