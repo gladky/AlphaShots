@@ -8,7 +8,7 @@
 			<div class="offer-em">
 				<ul class="accordin">
 					<li class="accordin">
-						<a class="accordin" id="a2">
+						<a class="accordin" id="a1">
 							<div class="vertical">
 								<p class="vertical" id="p1">standard</p>
 							</div>
@@ -36,9 +36,9 @@
 			</div>
 			<h3>Fotografia</h3>
 			<div class="offer-em">
-				<ul class="accordin">
-					<li class="accordin">
-						<a class="accordin" id="a1">
+				<ul class="accordin2">
+					<li class="accordin2">
+						<a class="accordin2" id="a2">
 							<div class="vertical">
 								<p class="vertical" id="p1">sesyjna</p>
 							</div>
@@ -49,8 +49,8 @@
 							</p>
 						</a>
 					</li>
-					<li class="accordin">
-						<a class="accordin">
+					<li class="accordin2">
+						<a class="accordin2">
 							<div class="vertical">
 								<p class="vertical">reklamowa</p>
 							</div>
