@@ -195,7 +195,7 @@ div.option-wrapper{
 .content {
 	padding: 10px 0;
 	height: 100%;
-	overflow:auto;
+	overflow: visible;
 	padding-bottom: 32px;
 }
 

@@ -1,9 +1,22 @@
-$(document).ready(function(){
+
+$(document).bind('ready', function(){
     lastBlock = $("#a1");
 	lastBlock2 = $("#a2");
-    maxWidth = 915;
-    minWidth = 25;
-
+	
+	var current_acc_w = $("#js-offer").css('width');
+	current_acc_w = parseInt(current_acc_w) - 35;
+	
+	window.onresize = function(){
+		var current_acc_w = $("#js-offer").css('width');
+		current_acc_w = parseInt(current_acc_w) - 35;
+		maxWidth = current_acc_w;
+	};
+	
+	
+    maxWidth = current_acc_w;
+    minWidth = 35;
+	
+	
     $("ul.accordin li.accordin a.accordin").hover(
       function functioname(){
         $(lastBlock).animate({width: minWidth+"px"}, { queue:false, duration:400 });

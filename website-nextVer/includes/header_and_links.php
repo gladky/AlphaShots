@@ -8,6 +8,7 @@
 		<link href="css/gallery.css" rel="stylesheet" type="text/css" />
 		<link href="css/contact.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="includes/fluid_menu.js"></script>
 		
 		
 		<!--accordion stuff-->

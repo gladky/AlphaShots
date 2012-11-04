@@ -3,7 +3,7 @@
 <div class="container"> <!--Main container -->
 	<?php include("includes/logo_and_nav.php"); ?>
 	<div class="content"> <!-- Content container -->
-		<div class="offer">
+		<div class="offer" id="js-offer" style="overflow:none;">
 			<h3>Panoramy</h3>
 			<div class="offer-em">
 				<ul class="accordin">
@@ -44,7 +44,7 @@
 							</div>
 							<img class="product" src="pictures/thum1.jpg" />
 							<p class="accordin">
-								<strong>Freebies2</strong><br/>
+								<strong>Freebies3</strong><br/>
 								Download free files to make your job easier.
 							</p>
 						</a>

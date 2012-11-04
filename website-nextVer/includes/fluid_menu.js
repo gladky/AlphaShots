@@ -7,6 +7,7 @@ jQuery(document).bind('ready', function(){
 		}
 	
 	window.onresize = function(){
+		
 		if(window.innerWidth<=1140 ){
 			if(window.innerWidth>=700){
 				document.getElementById('nav').style.letterSpacing =  parseInt(window.innerWidth/250) +'px';
