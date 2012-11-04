@@ -1,26 +1,33 @@
 @charset "utf-8";
 #container{
 	width:100%;
-	background-color:silver;
+	background-color:white;
 	min-height:400px;
 	padding:0;
 }
 #left{
 	float:left;
-	width:10%;
+	width:8%;
 	min-height:400px;
-	background-color:blue;
+	background-color:white;
 }
 #right{
 	float:right;
-	width:65%;
+	width:80%;
 	min-height:400px;
-	background-color:red;
+	background-color:white;
 }
 #center{
 	float:left;
 	margin:0 auto;
-	width:25%;
+	width:12%;
 	min-height:400px;
-	background-color:yellow
+	background-color:white;
+}
+#main_foto{
+	height:400px;
+	
+}
+#thumbnail{
+	width:100%;
 }
