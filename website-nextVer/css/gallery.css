@@ -1,1 +1,26 @@
 @charset "utf-8";
+#container{
+	width:100%;
+	background-color:silver;
+	min-height:400px;
+	padding:0;
+}
+#left{
+	float:left;
+	width:10%;
+	min-height:400px;
+	background-color:blue;
+}
+#right{
+	float:right;
+	width:65%;
+	min-height:400px;
+	background-color:red;
+}
+#center{
+	float:left;
+	margin:0 auto;
+	width:25%;
+	min-height:400px;
+	background-color:yellow
+}

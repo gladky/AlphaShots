@@ -3,14 +3,11 @@
 	<?php include("includes/logo_and_nav.php"); ?>
 	<div class="content"> <!-- Content container -->
 		<div id="galleria">
-			<link href="gall_css.css" rel="stylesheet" type="text/css" /> 
-				<script src="js/jquery.js"> </script>
-				<script src="js/jquery.galleriffic.js"> </script>
-				<script src="js/jquery.history.js"> </script>
-				<script src="js/jquery.opacityrollover.js"> </script>        
-        
-        
-			<img src="pictures/z (1).JPG">
+			<div id="container">
+				<div id ="left">ble</div>
+				<div id ="right">bla</div>
+				<div id ="center">blu</div>
+			</div>
 		</div>
 	</div><!-- end .content -->
 </div><!-- end .container -->
