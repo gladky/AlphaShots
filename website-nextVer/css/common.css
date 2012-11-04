@@ -162,7 +162,7 @@ li.horizontal-first {
 }
 
 p.branding {
-	background: rgba(35, 31, 32, .6);
+	background: rgba(135, 131, 132, .7);
 	text-align: left;
 	margin-top: 12px;
 	width: 250px;
@@ -176,9 +176,9 @@ p.branding {
 	border: 0px;
 }
 p.branding a {
-	/*color: rgb(249, 228, 130);
+	color: rgb(249, 228, 130);
 	line-height: normal;
-	text-transform: capitalize;*/
+	text-transform: capitalize;
 	text-decoration: none;
 }
 
@@ -231,6 +231,17 @@ div.option-wrapper{
 	position:relative;
 	z-index:6;
 	/*background: transparent;*/
+}
+
+div.widget_container{
+	position: absolute;
+	left: 20px;
+	top: 90px;
+	max-width: 400px;
+}
+
+p.widget_text{
+	color: #636363;
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */
