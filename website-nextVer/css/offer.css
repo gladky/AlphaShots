@@ -10,7 +10,7 @@
 	position:relative;
 	z-index:6;
 	/*background: transparent;*/
-	background-color: blue;
+	background-color: white;
 }
 
 .offer-em{
@@ -18,7 +18,7 @@
 	margin-top: 5px;
 	padding: 0px;
 	position:relative;
-	background-color:red;
+	background-color:silver;
 }
 
 .product_content{
@@ -49,8 +49,14 @@ ul.accordin li.accordin a.accordin{
 
 }
 
+
 #a1{
-  width:935px;
+  width:915px;
+  background-color: silver;
+
+}
+#a2{
+  width:915px;
   background-color: silver;
 
 }
@@ -62,15 +68,24 @@ ul.accordin li.accordin img.accordin{
 ul.accordin li.accordin p.accordin{
   margin: 0;
   padding: 0;
-  width: 120px;
+  width: 420px;
   display: block;
   margin-left: 30px;
-  background-color:blue;
+  background-color:silver;
   float:right;
 }
 
 img.product {
 	margin-left: 60px;
+}
+
+div.vertical {
+  position:absolute;
+  padding:0;
+  background-color: blue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 140px;
 }
 
 p.vertical {
@@ -85,10 +100,9 @@ p.vertical {
 	bottom:0;
 	width:20px;
 	height:20px;
-	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
 	font-size:24px;
 	font-weight:normal;
 	text-shadow: 0px 0px 1px #333;
-	z-index:-1;
 	padding-left: 10px;
+	padding-top: 0px;
 }
