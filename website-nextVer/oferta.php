@@ -9,25 +9,26 @@
 					<li class="accordin">
 						<a class="accordin" id="a1">
 							<div class="vertical">
-								<p class="vertical" id="p1">standard</p>
+								<p class="vertical" id="p1">Standard</p>
 							</div>
 							<img class="product" src="pictures/thum1.jpg" />
 							<p class="accordin">
-								<strong>Freebies2</strong><br/>
-								Download free files to make your job easier.
+								<strong>Standard</strong><br/>
+								Najlepsza cena, standardowa jakoœæ wykonania </br>
+								Ceny od <span class="blue">99z³</span>
 							</p>
 						</a>
 					</li>
 					<li class="accordin">
 						<a class="accordin" id="b1">
 							<div class="vertical">
-								<p class="vertical">premium</p>
+								<p class="vertical">Premium</p>
 							</div>
 							<img class="product" src="pictures/thum1.jpg" />
 							<p class="accordin">
-								<strong>Tutorials</strong><br/>
-								Tips and tricks to help you
-								keep up with the latest technology.
+								<strong>Premium</strong><br/>
+								Szczególna dba³oœæ o szczegó³y, najlepsza jakoœæ, przyspieszony czas wykonania </br>
+								Ceny od <span class="blue">149z³</span>
 							</p>
 						</a>
 					</li>
@@ -55,9 +56,9 @@
 							</div>
 							<img class="product" src="pictures/thum1.jpg" />
 							<p class="accordin">
-								<strong>Tutorials</strong><br/>
-								Tips and tricks to help you
-								keep up with the latest technology.
+								<strong>Sesje reklamowe</strong><br/>
+								Profesjonalne zdjêcia produktu, aran¿acja sceny, interakcja z zamawiaj¹cym</br>
+								Ceny od <span class="blue">199z³</span>
 							</p>
 						</a>
 					</li>
