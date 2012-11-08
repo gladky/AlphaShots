@@ -1,17 +1,31 @@
-
+function resizeAccordin(){
+		var current_acc_w = $("#js-offer").css('width');
+		current_acc_w = parseInt(current_acc_w) - 35;
+		maxWidth = current_acc_w;
+		
+		if(parseInt($("#a1").css('width'))<=35)
+			$("#b1").css('width', current_acc_w  + "px");
+		else
+			$("#a1").css('width', current_acc_w  + "px");
+			
+			
+		if(parseInt($("#a2").css('width'))<= 35)
+			$("#b2").css('width', current_acc_w  + "px");
+		else
+			$("#a2").css('width', current_acc_w  + "px");
+	};
+	
 $(document).bind('ready', function(){
     lastBlock = $("#a1");
 	lastBlock2 = $("#a2");
 	
+	
 	var current_acc_w = $("#js-offer").css('width');
 	current_acc_w = parseInt(current_acc_w) - 35;
 	
-	window.onresize = function(){
-		var current_acc_w = $("#js-offer").css('width');
-		current_acc_w = parseInt(current_acc_w) - 35;
-		maxWidth = current_acc_w;
-	};
-	
+
+	$("#a1").css('width', current_acc_w  + "px");
+	$("#a2").css('width', current_acc_w  + "px");
 	
     maxWidth = current_acc_w;
     minWidth = 35;

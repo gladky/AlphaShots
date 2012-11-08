@@ -1,5 +1,4 @@
 <?php include("includes/header_and_links.php"); ?>
-<script type="text/javascript" src="js/accordion.js"></script>
 <div class="container"> <!--Main container -->
 	<?php include("includes/logo_and_nav.php"); ?>
 	<div class="content"> <!-- Content container -->
@@ -20,7 +19,7 @@
 						</a>
 					</li>
 					<li class="accordin">
-						<a class="accordin">
+						<a class="accordin" id="b1">
 							<div class="vertical">
 								<p class="vertical">premium</p>
 							</div>
@@ -50,7 +49,7 @@
 						</a>
 					</li>
 					<li class="accordin2">
-						<a class="accordin2">
+						<a class="accordin2" id="b2">
 							<div class="vertical">
 								<p class="vertical">reklamowa</p>
 							</div>
