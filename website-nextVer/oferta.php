@@ -3,7 +3,7 @@
 	<?php include("includes/logo_and_nav.php"); ?>
 	<div class="content"> <!-- Content container -->
 		<div class="offer" id="js-offer" style="overflow:none;">
-			<h3>Panoramy</h3>
+			<h3>Panoramy Sferyczne</h3>
 			<div class="offer-em">
 				<ul class="accordin">
 					<li class="accordin">
@@ -11,11 +11,12 @@
 							<div class="vertical">
 								<p class="vertical" id="p1">Standard</p>
 							</div>
-							<img class="product" src="pictures/thum1.jpg" />
+							<img class="product" src="images/offer/product-sample.gif" />
 							<p class="accordin">
-								<strong>Standard</strong><br/>
-								Najlepsza cena, standardowa jakoœæ wykonania </br>
+								<span class="offer-name">Standard</span>
+								Najlepsza cena, standardowa jakoœæ wykonania </br></br>
 								Ceny od <span class="blue">99z³</span>
+								<span class="small">sprawdz szczegó³owy cennik</span>
 							</p>
 						</a>
 					</li>
@@ -24,11 +25,12 @@
 							<div class="vertical">
 								<p class="vertical">Premium</p>
 							</div>
-							<img class="product" src="pictures/thum1.jpg" />
+							<img class="product" src="images/offer/product-sample.gif" />
 							<p class="accordin">
-								<strong>Premium</strong><br/>
-								Szczególna dba³oœæ o szczegó³y, najlepsza jakoœæ, przyspieszony czas wykonania </br>
+								<span class="offer-name">Premium</span>
+								Szczególna dba³oœæ o szczegó³y, najlepsza jakoœæ, przyspieszony czas wykonania </br></br>
 								Ceny od <span class="blue">149z³</span>
+								<span class="small">sprawdz szczegó³owy cennik</span>
 							</p>
 						</a>
 					</li>
@@ -40,25 +42,28 @@
 					<li class="accordin2">
 						<a class="accordin2" id="a2">
 							<div class="vertical">
-								<p class="vertical" id="p1">sesyjna</p>
+								<p class="vertical" id="p1">Sesyjna</p>
 							</div>
-							<img class="product" src="pictures/thum1.jpg" />
+							<img class="product" src="images/offer/product-sample.gif" />
 							<p class="accordin">
-								<strong>Freebies3</strong><br/>
-								Download free files to make your job easier.
+								<span class="offer-name">Sesje zdjêciowe</span>
+								Download free files to make your job easier.</br></br>
+								Ceny od <span class="blue">199z³</span>
+								<span class="small">sprawdz szczegó³owy cennik</span>
 							</p>
 						</a>
 					</li>
 					<li class="accordin2">
 						<a class="accordin2" id="b2">
 							<div class="vertical">
-								<p class="vertical">reklamowa</p>
+								<p class="vertical">Reklamowa</p>
 							</div>
-							<img class="product" src="pictures/thum1.jpg" />
+							<img class="product" src="images/offer/product-sample.gif" />
 							<p class="accordin">
-								<strong>Sesje reklamowe</strong><br/>
-								Profesjonalne zdjêcia produktu, aran¿acja sceny, interakcja z zamawiaj¹cym</br>
+								<span class="offer-name">Sesje reklamowe</span>
+								Profesjonalne zdjêcia produktu, aran¿acja sceny, interakcja z zamawiaj¹cym</br></br>
 								Ceny od <span class="blue">199z³</span>
+								<span class="small">sprawdz szczegó³owy cennik</span>
 							</p>
 						</a>
 					</li>
