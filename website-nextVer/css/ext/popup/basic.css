@@ -30,9 +30,11 @@
 	height:360px;
 	width:600px;
 	color:black;
+	background:url(../../../images/offer/cennik-sample.gif) no-repeat;
+	background-size: 600px 360px;
 	background-color:silver;
 	border:0px solid #444;
-	padding:12px;
+	padding:0px;
 	float:none;
 }
 
