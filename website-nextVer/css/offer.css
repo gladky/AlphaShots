@@ -43,7 +43,7 @@ ul.accordin li.accordin{
   margin-top:0px;
 }
 
-ul.accordin li.accordin a.accordin{
+ul.accordin li.accordin div.accordin{
   display: block;
   overflow: hidden;
   height: 200px;
@@ -60,7 +60,7 @@ ul.accordin li.accordin p.accordin{
   margin-top: 30px;
   margin-bottom: auto;
   padding: 0;
-  width: 500px;
+  width: 470px;
   display: block;
   margin-left: 30px;
   background-color:#f4f6f6;
@@ -87,7 +87,7 @@ ul.accordin2 li.accordin2{
   margin-top:0px;
 }
 
-ul.accordin2 li.accordin2 a.accordin2{
+ul.accordin2 li.accordin2 div.accordin2d{
   display: block;
   overflow: hidden;
   height: 200px;
@@ -103,7 +103,7 @@ ul.accordin2 li.accordin2 p.accordin{
   margin-top: 30px;
   margin-bottom: auto;
   padding: 0;
-  width: 500px;
+  width: 470px;
   display: block;
   margin-left: 30px;
   background-color:#f4f6f6;
@@ -178,6 +178,12 @@ span.offer-name{
 span.small{
 	font-size: 12px;
 	color: #009ee3;
-	display: block; 
+	display: block;
 	text-align: right;
+}
+
+a.popup{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
 }
