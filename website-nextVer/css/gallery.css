@@ -7,27 +7,52 @@
 }
 #left{
 	float:left;
-	width:8%;
+	width:15%;
 	min-height:400px;
 	background-color:white;
 }
 #right{
 	float:right;
-	width:80%;
+	width:71%;
 	min-height:400px;
 	background-color:white;
 }
 #center{
 	float:left;
 	margin:0 auto;
-	width:12%;
+	width:14%;
 	min-height:400px;
 	background-color:white;
 }
 #main_foto{
-	height:400px;
+	height:468px;
+	width: 710px;
+}
+img.thumbnail{
+	width:84%;
 	
 }
-#thumbnail{
-	width:100%;
+
+img.top_button {
+	width: 8%;
+}
+
+img.bottom_button {
+	width: 8%;
+	float: center;
+}
+
+p.vertical_txt {
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	white-space:nowrap;
+	width:80%;
+	font-size: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	position: relative;
+	left: 50px;
+	
 }
