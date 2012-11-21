@@ -2,6 +2,8 @@
 <div class="container"> <!--Main container -->
 	<?php include("includes/logo_and_nav.php"); ?>
 	<div class="content"> <!-- Content container -->
+		<div class="wshadow-flipped">
+		</div>
 		<div class="widget">
 			<div class = "widget_container">
 				<h2>Fotografia</h2>
@@ -15,6 +17,8 @@
 				<p class="branding"><a href="oferta.php">Oferta</a></p>
 				<p class="branding"><a href="kontakt.php">Kontakt</a></p>
 			</div>
+		</div>
+		<div class="wshadow">
 		</div>
 	</div><!-- end .content -->
 </div><!-- end .container -->

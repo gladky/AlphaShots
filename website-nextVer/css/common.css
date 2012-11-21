@@ -228,11 +228,11 @@ div.option-wrapper{
 	width: 90%;
 	height: 380px;
 	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	margin-left: auto ;
  	margin-right: auto ;
 	background: url(../images/widget/widget_pict_02.jpg) no-repeat;
-	
+	border: 0px solid black;
 	position:relative;
 	z-index:6;
 	/*background: transparent;*/
@@ -264,3 +264,31 @@ p.widget_text{
 	font-size: 1px;
 	line-height: 0px;
 }
+
+/* all shadows */
+div.wshadow, div.wshadow-flipped, div.offer-shadow, div.offer-shadow-flipped{
+	margin-left: auto;
+ 	margin-right: auto;
+	padding:0;
+}
+/* widget shadows */
+div.wshadow, div.wshadow-flipped{
+	height: 25px;
+	width: 90%;
+}
+/*offer shadows */
+div.offer-shadow, div.offer-shadow-flipped{
+	height: 15px;
+	width:100%;
+}
+/* bottom shadows */
+div.wshadow, div.offer-shadow{
+	background: url(../images/ext/wowslider/shadow-full.png);
+	background-size: 100% 100%;
+}
+/* top shadows*/
+div.wshadow-flipped, div.offer-shadow-flipped{
+	background: url(../images/ext/wowslider/shadow-flipped.png);
+	background-size: 100% 100%;
+}
+

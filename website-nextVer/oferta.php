@@ -74,6 +74,7 @@
 				</ul>
 			</div>
 			<h3>Fotografia</h3>
+			<div class="offer-shadow-flipped"></div>
 			<div class="offer-em">
 				<ul class="accordin2">
 					<li class="accordin2">
@@ -142,6 +143,7 @@
 					</li>
 				</ul>
 			</div>
+			<div class="offer-shadow">
 		</div>
 	</div><!-- end .content -->  
 </div><!-- end .container -->
