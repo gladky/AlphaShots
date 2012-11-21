@@ -13,8 +13,7 @@
         <script type="text/javascript" src="includes/fluid_menu.js"></script>
 		<script type="text/javascript" src="js/accordion.js"></script>
 		<script type="text/javascript" src="js/resizeInvoker.js"></script>
-		
-		<!--accordion stuff-->
+		<link rel="stylesheet" type="text/css" href="css/ext/wowslider/style.css" />
 
 		</head>
 <body>

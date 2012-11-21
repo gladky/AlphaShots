@@ -4,7 +4,7 @@
 			<p class="motto"><span class="grey">Just look around - </span>easily</p>
 		</div>
 		<div class="company_name">
-			<p class="company_name"><b>ALPHA<span class="grey">SHOTS</span></b></p>
+			<a class="company_name" href="main.php"><p class="company_name"><b>ALPHA<span class="grey">SHOTS</span></b></p></a>
 		</div>
 	</div>
 </div> <!--end .header-->

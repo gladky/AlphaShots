@@ -53,6 +53,10 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	text-decoration: none;
 }
 
+a.company_name {
+	text-decoration:none;
+}
+
 p.company_name {
 	text-transform: uppercase;
 	color: #009ee3;
@@ -206,6 +210,7 @@ div.option-wrapper{
 
 /* ~~ The footera ~~ */
 .footer {
+	color:#cccbcb;
 	position: relative;
 	margin-top: -32px; /* negative value of footer height */
 	height: 32px;
