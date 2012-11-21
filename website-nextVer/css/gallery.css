@@ -1,36 +1,48 @@
 @charset "utf-8";
 #container{
-	width:100%;
-	background-color:white;
-	min-height:400px;
-	padding:0;
+	width: 95%;
+	background-color: white;
+	min-height: 400px;
+	padding: 0;
+	margin-left: -20px;
 }
+
 #left{
-	float:left;
-	width:15%;
-	min-height:400px;
-	background-color:white;
+	float: left;
+	width: 10%;
+	min-height: 400px;
+	background-color: white;
+	height: 100%;
 }
+
 #right{
-	float:right;
-	width:71%;
-	min-height:400px;
-	background-color:white;
+	float: right;
+	width: 75%;
+	min-height: 400px;
+	background-color: white;
 }
-#center{
-	float:left;
-	margin:0 auto;
-	width:14%;
-	min-height:400px;
-	background-color:white;
+
+#center{ /* div od carousel*/
+	float: left;
+	margin: 0;
+	width: 15%;
+	height: 100%;
+	min-height: 400px;
+	background-color: white;
+	overflow: hidden;
 }
+
 #main_foto{
-	height:468px;
-	width: 710px;
-}
-img.thumbnail{
-	width:84%;
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
 	
+}
+
+img.thumbnail{
+	width: 97%;
+	border: 1px solid white;
+	float: left;
 }
 
 img.top_button {
@@ -39,7 +51,7 @@ img.top_button {
 
 img.bottom_button {
 	width: 8%;
-	float: center;
+	float: bottom;
 }
 
 p.vertical_txt {
@@ -48,11 +60,51 @@ p.vertical_txt {
 	-moz-transform:rotate(-90deg);
 	-o-transform: rotate(-90deg);
 	white-space:nowrap;
-	width:80%;
+	width: 80%;
 	font-size: 20px;
 	font-family: Verdana, Geneva, sans-serif;
 	font-weight: bold;
 	position: relative;
-	left: 50px;
+	left: 0px;
+	margin-top: 30px;
+	
+}
+
+#js-top_thumbs{
+}
+
+#js-bottom_thumb{
+}
+
+#js-button_right{
+	float: right;
+	position: relative;
+	left: 0px;
+	
+}
+
+#js-button_left{
+}
+
+#carousel{
+	overflow: hidden;
+	height: 480px;
+}
+
+#js-carousel{
+	list-style-type: none;
+	position: relative;
+	margin: 0px;
+	height: 9999px;
+}
+
+#js-carousel li
+{
+	float: left;
+	height: 97px; 
+	width: 144px;
+	position: relative;
+	left: -40px;
+	top: -97px;
 	
 }

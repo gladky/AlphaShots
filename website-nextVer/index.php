@@ -30,53 +30,44 @@
                     </table>
                 </div>
 				<div id ="center" >
-                	<table id="thumbs_table">
-                    	<tr>
-                        	<td>
-                            	<img id="js-top_thumbs" class="top_button" src="images/top.jpg" style="position:inherit; left:20px;"/>
-                            </td>
-                        </tr>
-                    	<tr>
-                        	<td id="js-thumb1">
-<!--
-                        		<img id="jpg-thumb1" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
--->
-                            </td>
-                        </tr>
-                    	<tr>
-                        	<td id="js-thumb2">
-<!--
-                        		<img id="jpg-thumb2" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
--->
-                            </td>
-                        </tr>
-                    	<tr>
-                        	<td id="js-thumb3">
-<!--
-                        		<img id="jpg-thumb3" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
--->
-                            </td>
-                        </tr>
-                    	<tr>
-                        	<td id="js-thumb4">
-<!--
-                        		<img id="jpg-thumb4" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
--->
-                            </td>
-                        </tr>
-                    	<tr>
-                        	<td id="js-thumb5">
-<!--
-                        		<img id="jpg-thumb5" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
--->
-                            </td>
-                        </tr>     
-                        <tr>
-                        	<td>
+                    	<div>
+                            	<img id="js-top_thumbs" class="top_button" src="images/top.jpg"/>
+						</div>
+							<div id="carousel">
+								<ul id="js-carousel">
+									
+	<!--
+								<tr>
+									<td id="js-thumb1">
+										<a id="a-thumb1"> <img id="jpg-thumb1" class="thumbnail" src="pictures/thumbs/thum1.jpg"/></a>
+									</td>
+								</tr>
+								<tr>
+									<td id="js-thumb2">
+										<img id="jpg-thumb2" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
+									</td>
+								</tr>
+								<tr>
+									<td id="js-thumb3">
+										<img id="jpg-thumb3" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
+									</td>
+								</tr>
+								<tr>
+									<td id="js-thumb4">
+										<img id="jpg-thumb4" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
+									</td>
+								</tr>
+								<tr>
+									<td id="js-thumb5">
+										<img id="jpg-thumb5" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
+									</td>
+								</tr> 
+	-->
+								</ul>
+							</div>
+							<div id="div-button">
                             	<img id="js-bottom_thumb" class="bottom_button" src="images/bottom.jpg"/>
-                            </td>
-                        </tr>                                                                                           
-                    </table>
+                            </div>
 				</div>
 			</div>
 		</div>
@@ -108,113 +99,95 @@ if (is_dir($dirname)) {
 	jQuery(document).bind('ready', function() {
 		
 		var options = {
+			
+			/*
 			thumb_templ_1: '<div id="th',
-			thumb_templ_2: '"><img id="jpg-thumb',
-			thumb_templ_3: '" class="thumbnail" src="pictures/thumbs/thum',
-			thumb_templ_4: '.jpg"/></div>',	
-			thumb_templ_cont: '#js-thumb',
+			thumb_templ_2: '"><a id="a-thumb',
+			thumb_templ_3: '"><img id="jpg-thumb',
+			thumb_templ_4: '" class="thumbnail" src="pictures/thumbs/thum',
+			thumb_templ_5: '.jpg"/></a></div>',	
+			*/
+			
+			templ_1: '<li id="js-thumb',
+			templ_2: '"><a id="a-thumb',
+			templ_3: '"><img id="jpg-thumb',
+			templ_4: '" class="thumbnail" src="pictures/thumbs/thum',
+			templ_5: '.jpg"/></a></li>',
+			
+			thumb_templ_cont: '#js-carousel',
 			main_photo_cont: '#js-main_photo_container',
-			thumb_next: '#js-bottom_thumb',
+			thumb_next: '#div-button',
 			thumb_prev: '#js-top_thumbs',
 			slide_next: '#js-button_left',
 			slide_prev: '#js-button_right',
 			
 		};
 		
-			var photos_count = '<?php echo $count;?>';
-			photos_count = parseInt(photos_count);
+		var photos_count = '<?php echo $count;?>';
+		photos_count = parseInt(photos_count);
 			
 		var idx = {
 			thumb_start: 1,
 			thumb_curr: 1,
 			thumb_max: photos_count,
 			slide_curr: 1,
-			offset:0,
+			offset: 1,
 			
 		};
 		
 		
 		var load_photos = function(){
 			
-			var photos_count = '<?php echo $count;?>';
-			photos_count = parseInt(photos_count);
-			
-			for(var i=1;i<=5;i++){ //zmienic 1 na i potem jak beda wszystkie miniatury
-				$(options.thumb_templ_cont + i).append(options.thumb_templ_1 + i + options.thumb_templ_2 + i + options.thumb_templ_3 + i + options.thumb_templ_4);
+			for(var i=1;i<=photos_count;i++){ //zmienic 1 na i potem jak beda wszystkie miniatury
+				$(options.thumb_templ_cont).append(options.templ_1 + i + options.templ_2 + i + options.templ_3 + i + options.templ_4 + i + options.templ_5 );
 			}
-			
+			$('#carousel ul li:first').before($('#carousel ul li:last'));
+			$('#carousel ul li:first').before($('#carousel ul li:last'));
+			$('#carousel ul').css({'top' : '-97px'}); 
 			$(options.main_photo_cont).append('<img id="main_foto" src="pictures/z1.jpg"/>');
 			
 				
 		};
 			
-			
-		var remove_photos = function(thumb_curr){
-			
-			for(var i=1;i<=5;i++){
-				$('#th'+ i).remove();
-			}
-			
-		};	
-			
-			
-		var append_photos = function(thumb_curr){
-			var j = [];
-			for(var i=thumb_curr; i<=thumb_curr + 4;i++){ //zmienic 1 na i potem jak beda wszystkie miniatury
-			
-				var curr = i % idx.thumb_max;
-				
-				if (curr==0){
-					j.push(idx.thumb_max);
-				}
-				else if(curr<0){
-					curr = idx.thumb_max - (0 - curr);
-					j.push(curr);
-				}
-				else{
-					j.push(curr);
-				}
-			}
-			for (i=1; i<=5; i++){
-				$(options.thumb_templ_cont + i).append(options.thumb_templ_1 + i + options.thumb_templ_2 + j[i-1] + options.thumb_templ_3 + j[i-1] + options.thumb_templ_4);
-			}
-		};	
-			
-			
+		//dzialanie
+		load_photos();
+		
 		var carousel_next = function(){
 			
-			remove_photos(idx.thumb_curr);
-
-			idx.thumb_curr++;
-
-			append_photos(idx.thumb_curr);
+			//$('#js-carousel').stop();
+			
+			var item_height = $('#carousel ul li').outerHeight() + 1;
+			var top_indent = parseInt($('#carousel ul').css('top')) - item_height;
+			
+			
+			$('#carousel ul').animate({'top': top_indent,}, 500, function(){
+				$('#carousel ul li:last').after($('#carousel ul li:first'));
+				$('#carousel ul').css({'top' : '-97px'}); 
+				});
+			//idx.offset++;
+			//~ var off = (idx.offset % photos_count) - 4;
+			//~ if (off == photos_count - 4){
+				//~ 
+				//~ load_photos();
+				//~ 
+			//~ }
 			
 		};
+		
 		
 		
 		var carousel_prev = function(){
+			//$('#js-carousel').stop();
 			
-			remove_photos(idx.thumb_curr);
-
-			idx.thumb_curr--;
-
-			append_photos(idx.thumb_curr);
+			var item_height = $('#carousel ul li').outerHeight() + 1;
+			var top_indent = parseInt($('#carousel ul').css('top')) + item_height;
 			
-		};
-		
-		
-		var slide_prev = function(){
+			//idx.offset--;
+			$('#carousel ul').animate({'top': top_indent,}, 500, function(){
+				$('#carousel ul li:first').before($('#carousel ul li:last'));
+				$('#carousel ul').css({'top' : '-97px'});});
 			
 		};
-		
-		
-		var slide_next = function(){
-			
-		};
-		
-		
-		//dzialanie
-		load_photos();
 		
 		$(options.thumb_next).bind('click', function(){
 			carousel_next();
