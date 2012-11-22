@@ -18,6 +18,7 @@
 #right{
 	float: right;
 	width: 75%;
+	margin-top: 19px;
 	min-height: 400px;
 	background-color: white;
 }
@@ -35,14 +36,32 @@
 #main_foto{
 	height: 100%;
 	width: 100%;
-	margin-top: 20px;
-	
+	position: relative;
+	overflow: hidden;	
 }
+
+#js-slide_container{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
+	position: relative;
+}
+
+#js-slide_container img{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
+	position: absolute;
+	z-index: 1;
+	width: 720px;
+	height: 468px;
+	top: 150px;
+}
+
+#js-slide_container img.active{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
+	z-index: 3;
+}
+
 
 img.thumbnail{
 	width: 97%;
 	border: 1px solid white;
 	float: left;
+	opacity: 0.8;
 }
 
 img.top_button {
@@ -71,35 +90,38 @@ p.vertical_txt {
 }
 
 #js-top_thumbs{
+	position: relative;
+	left: 65px;
 }
 
 #js-bottom_thumb{
+	position: relative;
+	left: 65px;
 }
 
 #js-button_right{
 	float: right;
-	position: relative;
-	left: 0px;
+	position: absolute;
+	right: 200px;
 	
 }
 
 #js-button_left{
 }
 
-#carousel{
+#carousel{ /* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
 	overflow: hidden;
 	height: 480px;
 }
 
-#js-carousel{
+#js-carousel{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
 	list-style-type: none;
 	position: relative;
 	margin: 0px;
 	height: 9999px;
 }
 
-#js-carousel li
-{
+#js-carousel li{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
 	float: left;
 	height: 97px; 
 	width: 144px;

@@ -18,10 +18,13 @@
                         	<td>	
                             	<img id="js-button_left" src="images/left.jpg">
                             </td>
-                            <td id="js-main_photo_container">
+                            <td id="js-slide_container">
+								<div id="main_photo">
+								
 <!--
                 				<img id="main_foto" src="pictures/z1.jpg"/>	
 -->
+								</div>
                             </td>
                             <td>
                             	<img id="js-button_right"  src="images/right.jpg" />
@@ -99,27 +102,23 @@ if (is_dir($dirname)) {
 	jQuery(document).bind('ready', function() {
 		
 		var options = {
-			
-			/*
-			thumb_templ_1: '<div id="th',
-			thumb_templ_2: '"><a id="a-thumb',
-			thumb_templ_3: '"><img id="jpg-thumb',
-			thumb_templ_4: '" class="thumbnail" src="pictures/thumbs/thum',
-			thumb_templ_5: '.jpg"/></a></div>',	
-			*/
-			
+
 			templ_1: '<li id="js-thumb',
 			templ_2: '"><a id="a-thumb',
-			templ_3: '"><img id="jpg-thumb',
+			templ_3: '"><img id="',
 			templ_4: '" class="thumbnail" src="pictures/thumbs/thum',
 			templ_5: '.jpg"/></a></li>',
 			
+			templ_m1: '<img id="main_foto', 
+			templ_m2: '" src="pictures/z',
+			templ_m3: '.jpg"/>',
+			
 			thumb_templ_cont: '#js-carousel',
-			main_photo_cont: '#js-main_photo_container',
+			main_photo_cont: '#js-slide_container',
 			thumb_next: '#div-button',
 			thumb_prev: '#js-top_thumbs',
-			slide_next: '#js-button_left',
-			slide_prev: '#js-button_right',
+			slide_next: '#js-button_right',
+			slide_prev: '#js-button_left',
 			
 		};
 		
@@ -127,67 +126,123 @@ if (is_dir($dirname)) {
 		photos_count = parseInt(photos_count);
 			
 		var idx = {
-			thumb_start: 1,
-			thumb_curr: 1,
-			thumb_max: photos_count,
-			slide_curr: 1,
-			offset: 1,
-			
+			slide_curr: 1,	//aktualnie wyswietlany slajd
+			allow_fade: 1,  //pozwala na fadeowanie
 		};
 		
 		
 		var load_photos = function(){
 			
-			for(var i=1;i<=photos_count;i++){ //zmienic 1 na i potem jak beda wszystkie miniatury
+			for(var i=1;i<=photos_count;i++){
 				$(options.thumb_templ_cont).append(options.templ_1 + i + options.templ_2 + i + options.templ_3 + i + options.templ_4 + i + options.templ_5 );
+				$(options.main_photo_cont).append(options.templ_m1 + i + options.templ_m2 + i + options.templ_m3);
 			}
 			$('#carousel ul li:first').before($('#carousel ul li:last'));
 			$('#carousel ul li:first').before($('#carousel ul li:last'));
 			$('#carousel ul').css({'top' : '-97px'}); 
-			$(options.main_photo_cont).append('<img id="main_foto" src="pictures/z1.jpg"/>');
-			
-				
-		};
-			
-		//dzialanie
-		load_photos();
+			$('#main_foto'+idx.slide_curr).addClass('active');
+		};		
 		
-		var carousel_next = function(){
-			
+				
+		var carousel_next = function(){	
 			//$('#js-carousel').stop();
 			
-			var item_height = $('#carousel ul li').outerHeight() + 1;
+			var item_height = $('#carousel ul li').outerHeight();
 			var top_indent = parseInt($('#carousel ul').css('top')) - item_height;
-			
 			
 			$('#carousel ul').animate({'top': top_indent,}, 500, function(){
 				$('#carousel ul li:last').after($('#carousel ul li:first'));
 				$('#carousel ul').css({'top' : '-97px'}); 
 				});
-			//idx.offset++;
-			//~ var off = (idx.offset % photos_count) - 4;
-			//~ if (off == photos_count - 4){
-				//~ 
-				//~ load_photos();
-				//~ 
-			//~ }
-			
 		};
-		
 		
 		
 		var carousel_prev = function(){
 			//$('#js-carousel').stop();
 			
-			var item_height = $('#carousel ul li').outerHeight() + 1;
+			var item_height = $('#carousel ul li').outerHeight();
 			var top_indent = parseInt($('#carousel ul').css('top')) + item_height;
 			
-			//idx.offset--;
 			$('#carousel ul').animate({'top': top_indent,}, 500, function(){
 				$('#carousel ul li:first').before($('#carousel ul li:last'));
 				$('#carousel ul').css({'top' : '-97px'});});
+		};
+		
+		
+		var slide_next = function(){
+			var $active = $('#js-slide_container .active');
+			
+			if(idx.allow_fade == 1){
+				if (idx.slide_curr == photos_count){
+					idx.slide_curr = 1;
+				}
+				else{
+					idx.slide_curr = idx.slide_curr + 1;
+				}
+				
+				var $next = $('#main_foto' + idx.slide_curr);
+			
+				idx.allow_fade = 0; 
+				$next.css('z-index', 2);
+				$active.fadeOut(1000, function(){
+					$active.css('z-index', 1).show().removeClass('active');
+					$next.css('z-index', 3).addClass('active');
+					idx.allow_fade = 1;
+				});
+			}
+
+		};
+		
+
+		var slide_prev = function(){
+			var $active = $('#js-slide_container .active');
+			if(idx.allow_fade == 1){
+				
+				if (idx.slide_curr == 1){
+					
+					idx.slide_curr = photos_count;
+				}
+				else{
+					idx.slide_curr = idx.slide_curr - 1;
+				}
+				
+				var $prev = $('#main_foto' + idx.slide_curr);
+
+				idx.allow_fade = 0; 
+				$prev.css('z-index', 2);
+				$active.fadeOut(1000, function(){
+					$active.css('z-index', 1).show().removeClass('active');
+					$prev.css('z-index', 3).addClass('active');
+					idx.allow_fade = 1;
+				});
+			}
 			
 		};
+				
+
+		var slide_rand = function(next_slide){
+			
+			var $active = $('#js-slide_container .active');
+			if(idx.allow_fade == 1){
+				idx.slide_curr = next_slide;
+				var $next = $('#main_foto' + next_slide);
+				
+				alert(idx.slide_curr);
+				
+				idx.allow_fade = 0; 
+				$next.css('z-index', 2);
+				$active.fadeOut(1000, function(){
+					$active.css('z-index', 1).show().removeClass('active');
+					$next.css('z-index', 3).addClass('active');
+					idx.allow_fade = 1;
+				});
+			}
+			
+		};
+
+			
+		//dzialanie
+		load_photos();
 		
 		$(options.thumb_next).bind('click', function(){
 			carousel_next();
@@ -207,6 +262,14 @@ if (is_dir($dirname)) {
 		$(options.slide_prev).bind('click', function(){
 			slide_prev();
 		});
+		
+			
+		$('#js-carousel img').bind('click', function(){
+			var identify = parseInt($(this).attr('id'));
+			slide_rand(identify);
+		});
+		
+		
 		
 	});
 </script>
