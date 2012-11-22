@@ -78,6 +78,11 @@
 </div><!-- end .container -->
 
 
+<!--
+ odtąd mozna odlaczyc do osobnego pliku js
+-->
+
+
 <?php
 $dirname = 'pictures';
 $pattern = "/(\.jpg$)/i"; // valid image extensions
@@ -239,7 +244,6 @@ if (is_dir($dirname)) {
 			}
 			
 		};
-
 			
 		//dzialanie
 		load_photos();
@@ -268,7 +272,6 @@ if (is_dir($dirname)) {
 			var identify = parseInt($(this).attr('id'));
 			slide_rand(identify);
 		});
-		
 		
 		
 	});
