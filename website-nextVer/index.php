@@ -232,8 +232,6 @@ if (is_dir($dirname)) {
 				idx.slide_curr = next_slide;
 				var $next = $('#main_foto' + next_slide);
 				
-				alert(idx.slide_curr);
-				
 				idx.allow_fade = 0; 
 				$next.css('z-index', 2);
 				$active.fadeOut(1000, function(){
