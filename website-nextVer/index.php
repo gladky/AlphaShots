@@ -5,21 +5,25 @@
 		<div id="galleria">
 			<div id="container">
 				<div id ="left">
-                	<p id="js-photos_button" class="vertical_txt" style="top: 100px;" > 
-                    	Fotografia
-                    </p>
-                    <p id="js-pano_button" class="vertical_txt" style="top: 300px;">
-                    	Panorama
-                    </p>
+					<div id="photos_button_bg">
+						<p id="js-photos_button" class="vertical_txt" > 
+							Fotografia
+						</p>
+					</div>
+					<div id="pano_button_bg">
+						<p id="js-pano_button" class="vertical_txt">
+							Panorama
+						</p>
+					</div>
                 </div>
 				<div id ="right">
                 	<table>
                     	<tr>
                         	<td>	
-                            	<img id="js-button_left" src="images/left.jpg">
+                            	<img id="js-button_left" src="images/left.png">
                             </td>
-                            <td id="js-slide_container">
-								<div id="main_photo">
+                            <td id="chrome_fix">
+								<div id="js-slide_container">
 								
 <!--
                 				<img id="main_foto" src="pictures/z1.jpg"/>	
@@ -27,14 +31,14 @@
 								</div>
                             </td>
                             <td>
-                            	<img id="js-button_right"  src="images/right.jpg" />
+                            	<img id="js-button_right"  src="images/right.png" />
                             </td>
                         </tr>
                     </table>
                 </div>
 				<div id ="center" >
                     	<div>
-                            	<img id="js-top_thumbs" class="top_button" src="images/top.jpg"/>
+                            	<img id="js-top_thumbs" class="top_button" src="images/top.png"/>
 						</div>
 							<div id="carousel">
 								<ul id="js-carousel">
@@ -45,31 +49,12 @@
 										<a id="a-thumb1"> <img id="jpg-thumb1" class="thumbnail" src="pictures/thumbs/thum1.jpg"/></a>
 									</td>
 								</tr>
-								<tr>
-									<td id="js-thumb2">
-										<img id="jpg-thumb2" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
-									</td>
-								</tr>
-								<tr>
-									<td id="js-thumb3">
-										<img id="jpg-thumb3" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
-									</td>
-								</tr>
-								<tr>
-									<td id="js-thumb4">
-										<img id="jpg-thumb4" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
-									</td>
-								</tr>
-								<tr>
-									<td id="js-thumb5">
-										<img id="jpg-thumb5" class="thumbnail" src="pictures/thumbs/thum1.jpg"/>
-									</td>
-								</tr> 
+								
 	-->
 								</ul>
 							</div>
 							<div id="div-button">
-                            	<img id="js-bottom_thumb" class="bottom_button" src="images/bottom.jpg"/>
+                            	<img id="js-bottom_thumb" class="bottom_button" src="images/bottom.png"/>
                             </div>
 				</div>
 			</div>

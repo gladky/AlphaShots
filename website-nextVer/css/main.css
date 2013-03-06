@@ -1,0 +1,30 @@
+#js-slide_container_m{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
+	position: absolute;
+	left: 300px;
+	
+}
+
+#js-slide_container_m img{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
+	position: absolute;
+	z-index: 1;
+	/*width: 720px;
+	height: 468px;*/
+	width: 100%;
+	height: 100%;
+	/*left: -20px;*/
+	
+}
+
+#js-slide_container_m img.active{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
+	z-index: 3;
+
+}
+
+
+#js-ken_burns{
+	position: absolute;
+	overflow: hidden;
+	width: 720px;
+	height: 468px;
+}
+

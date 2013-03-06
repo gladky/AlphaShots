@@ -2,7 +2,7 @@
 #container{
 	width: 95%;
 	background-color: white;
-	min-height: 400px;
+	min-height: 390px;
 	padding: 0;
 	margin-left: -20px;
 }
@@ -10,25 +10,28 @@
 #left{
 	float: left;
 	width: 10%;
-	min-height: 400px;
+	min-height: 390px;
 	background-color: white;
 	height: 100%;
+	
 }
 
 #right{
 	float: right;
 	width: 75%;
 	margin-top: 19px;
-	min-height: 400px;
+	min-height: 390px;
 	background-color: white;
 }
 
 #center{ /* div od carousel*/
+	position: relative;
 	float: left;
 	margin: 0;
+	top: 0px;
 	width: 15%;
 	height: 100%;
-	min-height: 400px;
+	min-height: 390px;
 	background-color: white;
 	overflow: hidden;
 }
@@ -38,6 +41,8 @@
 	width: 100%;
 	position: relative;
 	overflow: hidden;	
+	
+	
 }
 
 #js-slide_container{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
@@ -47,26 +52,35 @@
 #js-slide_container img{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
 	position: absolute;
 	z-index: 1;
-	width: 720px;
-	height: 468px;
-	top: 150px;
+	width: 707px;
+	height: 455px;
+	top: -16px;
+	border: 1px solid black;
+	
+}
+
+#chrome_fix{	/*nie tykac, bo nie bedzie dzialac na chromie*/
+	position: relative;
+	top: 0px;
 }
 
 #js-slide_container img.active{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
 	z-index: 3;
+	
 }
 
 
 img.thumbnail{
-	width: 97%;
-	border: 1px solid white;
+	width: 94%;
+	border: 1px solid black;
 	float: left;
-	opacity: 0.7;
+	opacity: 0.8;
+	
 }
 
 img.thumbnail:hover{
-	width: 97%;
-	border: 1px solid white;
+	width: 94%;
+	border: 1px solid black;
 	float: left;
 	opacity: 1;
 }
@@ -92,7 +106,8 @@ p.vertical_txt {
 	font-weight: bold;
 	position: relative;
 	left: 0px;
-	margin-top: 30px;
+	margin-top: 0px;
+	color: #9c9c9c;
 	
 }
 
@@ -107,18 +122,22 @@ p.vertical_txt {
 }
 
 #js-button_right{
-	float: right;
-	position: absolute;
-	right: 200px;
+	
+	position: relative;
+	top: 196px;
+	left: 710px;
 	
 }
 
 #js-button_left{
+	position: relative;
+	top: 200px;
 }
 
 #carousel{ /* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
 	overflow: hidden;
-	height: 480px;
+	height: 457px;
+	background-color: white;
 }
 
 #js-carousel{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
@@ -130,10 +149,44 @@ p.vertical_txt {
 
 #js-carousel li{/* tego raczej nie ruszac, chyba ze po konsultacji z Karo*/
 	float: left;
-	height: 97px; 
-	width: 144px;
+	height: 92px; 
+	width: 139px;
 	position: relative;
 	left: -40px;
-	top: -97px;
+	top: -87px;
+	background-color: white;
+}
+
+#js-photos_button{
+	position: relative;
+	top: 150px;
+	left: -20px;
+	color: #009fe3;
 	
+}
+
+#js-pano_button{
+	position: relative;
+	top: 140px;
+	left: -20px;
+}
+
+#photos_button_bg{
+	position: relative;
+	top: 21px;
+	left: 54px;
+	width: 50px;
+	height: 229px;
+	background-color: white;
+}
+
+#pano_button_bg{
+	position: relative;
+	height: 50%;
+	top: 21px;
+	width: 50px;
+	left: 54px;
+	width: 50px;
+	height: 228px;
+	background-color: white;
 }
