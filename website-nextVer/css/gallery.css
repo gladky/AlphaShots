@@ -107,8 +107,7 @@ p.vertical_txt {
 	position: relative;
 	left: 0px;
 	margin-top: 0px;
-	color: #9c9c9c;
-	
+	color: #9c9c9c;	
 }
 
 #js-top_thumbs{
@@ -122,7 +121,6 @@ p.vertical_txt {
 }
 
 #js-button_right{
-	
 	position: relative;
 	top: 196px;
 	left: 710px;

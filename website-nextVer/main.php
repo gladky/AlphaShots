@@ -7,9 +7,14 @@
 			
 			</div>
 		</div>
-		<canvas id="kenburns" width="720" height="468">
-			<p>Your browser doesn't support canvas!</p>
-		</canvas>
+		<div id="canvas_container">
+			<div id="button1">
+			</div>
+			<canvas id="kenburns" width="900" height="468">
+				<p>Your browser doesn't support canvas!</p>
+			</canvas>
+			
+		</div>
 	</div><!-- end .content -->
 </div><!-- end .container -->
 
@@ -146,11 +151,13 @@ if (is_dir($dirname)) {
 					images:['pictures/main/m1.jpg',
 							'pictures/main/m2.jpg',
 							'pictures/main/m3.jpg',
+							'pictures/main/m4.jpg',
+							'pictures/main/m5.jpg',
 							],
 					frames_per_second: 30,
 					display_time: 7000,
 					fade_time: 1000,
-					zoom: 3,
+					zoom: 2,
 					background_color:'#ffffff',
 					post_render_callback:function($canvas, context) {
 						// Called after the effect is rendered

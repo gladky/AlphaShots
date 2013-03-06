@@ -28,3 +28,9 @@
 	height: 468px;
 }
 
+#canvas_container{
+	position: relative;
+	left: 100px;
+	top: 10px;
+	
+}

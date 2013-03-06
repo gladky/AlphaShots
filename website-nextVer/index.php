@@ -20,7 +20,8 @@
                 	<table>
                     	<tr>
                         	<td>	
-                            	<img id="js-button_left" src="images/left.png">
+                            	<img id="js-button_left" src="images/left.png" onmouseover="this.src='images/left_on.png'" 
+								onmouseout="this.src='images/left.png'">
                             </td>
                             <td id="chrome_fix">
 								<div id="js-slide_container">
@@ -31,14 +32,16 @@
 								</div>
                             </td>
                             <td>
-                            	<img id="js-button_right"  src="images/right.png" />
+                            	<img id="js-button_right"  src="images/right.png" onmouseover="this.src='images/right_on.png'" 
+								onmouseout="this.src='images/right.png'"/>
                             </td>
                         </tr>
                     </table>
                 </div>
 				<div id ="center" >
                     	<div>
-                            	<img id="js-top_thumbs" class="top_button" src="images/top.png"/>
+                            	<img id="js-top_thumbs" class="top_button" src="images/top.png" onmouseover="this.src='images/top_on.png'" 
+								onmouseout="this.src='images/top.png'"/>
 						</div>
 							<div id="carousel">
 								<ul id="js-carousel">
@@ -54,7 +57,8 @@
 								</ul>
 							</div>
 							<div id="div-button">
-                            	<img id="js-bottom_thumb" class="bottom_button" src="images/bottom.png"/>
+                            	<img id="js-bottom_thumb" class="bottom_button" src="images/bottom.png" onmouseover="this.src='images/bottom_on.png'" 
+								onmouseout="this.src='images/bottom.png'"/>
                             </div>
 				</div>
 			</div>
